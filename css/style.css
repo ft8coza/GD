@@ -1874,6 +1874,11 @@ h1.section-title:after {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.padding-round {
+  padding: 2em;
+  
+}
+
 .padding-medium {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -2978,7 +2983,7 @@ a.postbox:hover .image-overlay {
   grid-template-rows: repeat(12, 150px);
   margin: 0 auto;
   max-width: 90%;
-  padding: 3rem 0;
+  padding: 0rem 0;
 }
 /* Grid images --------------------------------------------*/
 .parent img,
