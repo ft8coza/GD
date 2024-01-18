@@ -2971,7 +2971,15 @@ a.postbox:hover .image-overlay {
   max-width: 90%;
   padding: 3rem 0;
 }
-
+.contact-information {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 150px);
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 3rem 0;
+}
 /* Grid images --------------------------------------------*/
 .parent img,
 .portfolio-container .image-link img {
@@ -3056,6 +3064,12 @@ a.postbox:hover .image-overlay {
 
 @media only screen and (max-width: 991px) {
   .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-information {
     display: flex;
     flex-wrap: wrap;
   }
