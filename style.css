@@ -2632,7 +2632,7 @@ h1.section-title:after {
   color: #fff;
   overflow: hidden; 
   font-family: var(--heading-font);
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 3px;
