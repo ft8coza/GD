@@ -73,8 +73,8 @@ html {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-header: "Montserrat", sans-serif;
-  --bs-font-body: "Montserrat", sans-serif;
+  --bs-font-header: "Grape nuts", cursive;
+  --bs-font-body: "Ubuntu", sans-serif;
   --bs-font-sans-serif: "Source Serif 4", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
@@ -85,6 +85,12 @@ html {
   );
 }
 
+@font-face {
+  font-family: twister;
+  src: url("/fonts/icomoon/fonts/Twister.ttf");
+
+}
+
 
 html, body {
   position: relative;
@@ -93,12 +99,13 @@ html, body {
 }
 html {
   font-size: 100%;
-  font-family: sans-serif;
+  font-family:  var(--bs-font-header);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
+  
   font-style: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -297,8 +304,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: Raleway, sans-serif;
-  line-height: 1.8;
+  font-family:  var(--bs-font-body);
+  line-height: 1.7;
   color: #111;
 }
 body.no-scroll {
@@ -523,11 +530,13 @@ img {
 /** 3. Typography
 --------------------------------------------------------------*/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  
   font-weight: 700;
   line-height: 1.2;
   color: #333;
 }
 h4, h5, h6 {
+  
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -535,14 +544,17 @@ h5, h6 {
   letter-spacing: 1px;
 }
 .h1, h1  {
+  font-family: var(--bs-font-header) !important;
   font-size: 3em;
   line-height: 1;
 }
 .h2, h2  {
+  font-family: var(--bs-font-header) !important;
   font-size: 2.1em;
   line-height: 1.2;
 }
 .h3, h3  {
+  font-family: var(--bs-font-header) !important;
   font-size: 1.6em;
   line-height: 1.3;
 }
@@ -572,6 +584,7 @@ h2 a:hover, h3 a:hover, h3.post-title a:hover {
   text-decoration: none;
 }
 p {
+  font-family: var(--bs-font-body) !important;
   margin: 0 0 1.5em;
   font-size: 20px;
   line-height: 1.5;
