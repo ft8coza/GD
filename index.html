@@ -61,8 +61,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Zeyada&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="bg-black light">
@@ -116,7 +118,7 @@
 
     <header id="header">
       <div id="header-wrap">
-        <nav id="navbar">
+        <nav id="navbar" class=" fixed-top bg-dark">
           <div class="main-logo">
             <a href="index.html">Uplift Music.</a>
           </div>
@@ -135,6 +137,8 @@
       id="billboard"
       style="
         background-image: url(images/blue-brick-wall-background.jpg);
+        width: 100%;
+  height: auto;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 120vw;
@@ -486,6 +490,22 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.onscroll = function () {
+        mvyFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 
   <!-- Mirrored from demo.templatesjungle.com/Uplift Music/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2024 13:30:13 GMT -->

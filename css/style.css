@@ -85,12 +85,25 @@ html {
   );
 }
 
+@media screen and (min-width: 480px){
+  .hidden-mobile{
+    display: none;
+  }
+
+}
+
+
 @font-face {
   font-family: twister;
   src: url("/fonts/icomoon/fonts/Twister.ttf");
 
 }
 
+.bg-dark{
+background-color: Var(--bs-gray-dark)!important;
+}
+
+@scroll 
 
 html, body {
   position: relative;
@@ -289,6 +302,11 @@ table {
 td, th {
   padding: 0;
 }
+
+#billboard{
+  padding-top: 10vh;
+}
+
 
 
 
@@ -2516,7 +2534,8 @@ h1.section-title:after {
   justify-content: space-between;
   padding: 20px 40px;
   width: 100%;
-  z-index: 10
+  z-index: 10;
+ 
 }
 /* Main logo */
 .main-logo a {
