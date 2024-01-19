@@ -85,7 +85,7 @@ html {
   );
 }
 
-@media screen and (min-width: 480px){
+@media (max-width: 480px){
   .hidden-mobile{
     display: none;
   }
