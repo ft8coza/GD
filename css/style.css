@@ -54,7 +54,7 @@ html {
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-gray-dark: #0e0f12;
 
   --bs-mbarc-1: #bfaf92;
   --bs-mbarc-2: #32120e;
@@ -1717,7 +1717,12 @@ h6.light a:hover {
   background-color: #000 !important;
 }
 .bg-grey {
-  background-color: #0c0b0c !important;
+  background-color: var(--bs-1) ;
+
+}
+.bg-overlay{
+  background-color: rgba(0, 0, 0, 0.31) !important;
+
 }
 .wrap-shadow-inset {
   box-shadow: inset 0 0 3px rgba(0,0,0,.1);
