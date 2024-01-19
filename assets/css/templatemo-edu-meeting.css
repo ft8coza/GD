@@ -34,6 +34,64 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #0e0f12;
+
+  --bs-mbarc-1: #bfaf92;
+  --bs-mbarc-2: #32120e;
+  --bs-mbarc-3: #008080;
+  --bs-mbarc-4: #ffffff;
+  --bs-mbarc-5: #0e0e0e;
+
+  --bs-1: #000942;
+  --bs-2: #afc650;
+  --bs-3: #fccf41;
+  --bs-4: #8c9956;
+  --bs-5: #e6edcb;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-header: "Grape nuts", cursive;
+  --bs-font-body: "Ubuntu", sans-serif;
+  --bs-font-sans-serif: "Source Serif 4", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .mobile-fluid {
+    background-size: auto 100% !important;
+  }
+}
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -273,7 +331,7 @@ header
 .header-area {
   background-color: rgba(250,250,250,0.15);
   position: absolute;
-  top: 40px;
+  
   left: 0;
   right: 0;
   z-index: 100;
