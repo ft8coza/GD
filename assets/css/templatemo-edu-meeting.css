@@ -210,12 +210,12 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #3cf;
+  color: var(--bs-white);
 }
 
 a:hover {
   /*color: #fc3;*/
-  color: #fccf41;
+  color: var(--bs-3);
 }
 
 h1,
@@ -256,13 +256,13 @@ body {
 
 ::selection {
   /*background: #f5a425;*/
-  color: #fccf41;
+  color: var(--bs-3);
   color: #fff;
 }
 
 ::-moz-selection {
   /*background: #f5a425;*/
-  background: #fccf41;
+  background: var(--bs-3);
   color: #fff;
 }
 
@@ -286,8 +286,8 @@ body {
 .main-button-red a {
   font-size: 13px;
   color: #fff;
-  /* background-color: #a12c2f;*/
-  background-color: #afc650;
+  /* background-color: var(--bs-2);*/
+  background-color: var(--bs-2);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -364,13 +364,13 @@ header
 
 .sub-header .right-icons ul li a:hover {
   /*color: #f5a425;*/
-  color: #fccf41;
+  color: var(--bs-3);
 }
 
 .sub-header .left-content p em {
   font-style: normal;
   /*color: #f5a425;*/
-  color: #fccf41;
+  color: var(--bs-3);
 }
 
 .background-header {
@@ -394,12 +394,12 @@ header
 
 .background-header .main-nav .nav li:hover a {
   /*color: #fb5849 !important;*/
-  color: #fccf41 !important;
+  color: var(--bs-3) !important;
 }
 
 .background-header .nav li a.active {
   /*color: #fb5849 !important;*/
-  color: #fccf41 !important;
+  color: var(--bs-3) !important;
 }
 
 .header-area {
@@ -483,13 +483,13 @@ header
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   /*color: #f5a425 !important;*/
-  color: #fccf41 !important;
+  color: var(--bs-3) !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
   /*color: #f5a425 !important;*/
-  color: #fccf41 !important;
+  color: var(--bs-3) !important;
   opacity: 1;
 }
 
@@ -552,7 +552,7 @@ header
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
   /*color: #f5a425 !important;*/
-  color: #fccf41 !important;
+  color: var(--bs-3) !important;
   padding-left: 25px;
 }
 
@@ -1061,7 +1061,7 @@ section.upcoming-meetings .categories ul li a {
 }
 
 section.upcoming-meetings .categories ul li a:hover {
-  color: #a12c2f;
+  color: var(--bs-2);
 }
 
 section.upcoming-meetings .categories .main-button-red {
@@ -1121,7 +1121,7 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #a12c2f;
+  color: var(--bs-2);
 }
 
 .meeting-item .down-content .date span {
@@ -1272,7 +1272,7 @@ section.our-courses {
 }
 
 .our-courses .item .down-content .info span {
-  color: #a12c2f;
+  color: var(--bs-2);
   font-size: 15px;
   font-weight: 600;
   text-align: right;
@@ -1510,7 +1510,7 @@ section.contact-us #contact textarea {
 section.contact-us #contact button {
   font-size: 13px;
   color: #fff;
-  background-color: #a12c2f;
+  background-color: var(--bs-2);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -1526,7 +1526,7 @@ section.contact-us #contact button:hover {
 }
 
 section.contact-us .right-info {
-  background-color: #afc650;
+  background-color: var(--bs-2);
   border-radius: 20px;
   padding: 40px;
 }
@@ -1632,7 +1632,7 @@ section.meetings-page .filters {
 
 section.meetings-page .filters li {
   font-size: 13px;
-  color: #a12c2f;
+  color: var(--bs-2);
   background-color: #fff;
   padding: 11px 30px;
   display: inline-block;
@@ -1646,7 +1646,7 @@ section.meetings-page .filters li {
 
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
-  background-color: #a12c2f;
+  background-color: var(--bs-2);
   color: #fff;
 }
 
@@ -1687,7 +1687,7 @@ section.meetings-page .main-button-red a {
 
 section.meetings-page .pagination ul li.active a,
 section.meetings-page .pagination ul li a:hover {
-  background-color: #a12c2f;
+  background-color: var(--bs-2);
   color: #fff;
 }
 
@@ -1738,7 +1738,7 @@ section.meetings-page .pagination ul li a:hover {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #a12c2f;
+  color: var(--bs-2);
 }
 
 .meeting-single-item .thumb .date span {
