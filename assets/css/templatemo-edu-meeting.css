@@ -82,6 +82,15 @@ html {
   );
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-font-header) !important;
+}
+
 @media (max-width: 768px) {
   .hidden-mobile {
     display: none;
@@ -199,7 +208,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--bs-font-body);
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -251,7 +260,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--bs-font-body);
 }
 
 ::selection {
@@ -1581,12 +1590,12 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/musicStock/oscar-keys-ojVMh1QTVGY-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
+  padding-top: 200px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -1609,6 +1618,116 @@ section.heading-page h2 {
   letter-spacing: 1px;
 }
 
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #eef0ef;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  background: #f8f8f8;
+}
+
+.pricing h4 {
+  font-size: 36px;
+  color: var(--bs-2);
+  font-weight: 600;
+  font-family: var(--bs-font-body);
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color: var(--bs-2);
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background: var(--bs-2);
+  display: inline-block;
+  padding: 8px 35px;
+  border-radius: 50px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--bs-font-body);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: var(--bs-2);
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: var(--bs-2);
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: var(--bs-2);
+  color: #fff;
+}
+
 /*
 ---------------------------------------------
 upcoming meetings page
@@ -1621,7 +1740,7 @@ section.meetings-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 100px;
   padding-bottom: 0px;
 }
 
@@ -1718,6 +1837,8 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .down-content {
   background-color: #fff;
   padding: 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
