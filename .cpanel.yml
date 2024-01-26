@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/qfpuksur/public_html/upliftmusic/
     - /bin/cp -R test $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R vendor $DEPLOYPATH
+    - /bin/cp -R forms $DEPLOYPATH
+    - /bin/cp -R old $DEPLOYPATH
     - /bin/cp *.* $DEPLOYPATH
     
