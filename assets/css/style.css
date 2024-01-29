@@ -698,7 +698,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   margin-top: 300px;
   margin-right: 250px;
 }
@@ -938,14 +938,14 @@ section {
 }
 
 section.section-show {
-  top: 100px;
+  top: 85px;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
   padding: 30px;
 }
 
