@@ -698,7 +698,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   margin-top: 300px;
   margin-right: 250px;
 }
