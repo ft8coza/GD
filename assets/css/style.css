@@ -699,17 +699,22 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin-top: 200px;
-  margin-right: 330px;
+  margin-top: 300px;
+  margin-right: 250px;
 }
 
 .animated-text {
   position: relative;
   display: inline-block;
   animation: rotateAndBounce 4s infinite;
-  font-size: 50em;
+  font-size: 4em;
   color: var(--bs-3);
   font-family: var(--bs-font-body);
+}
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 2em; /* Adjust the font size for smaller screens */
+  }
 }
 
 @keyframes rotateAndBounce {
@@ -990,7 +995,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 40px;
   color: var(--bs-3);
 }
 
