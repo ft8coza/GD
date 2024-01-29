@@ -71,6 +71,10 @@ html {
   }
 }
 
+.hidden-text{
+  display: none !important;
+}
+
 .image-fluid {
   background-size: auto 100% !important;
 }
