@@ -61,7 +61,8 @@
     let section = select(this.hash)
     if (section) {
       e.preventDefault()
-
+      let animated = select('.animated-container')
+     
       let navbar = select('#navbar')
       let header = select('#header')
       let sections = select('section', true)
@@ -84,6 +85,7 @@
         header.classList.remove('header-top')
         sections.forEach((item) => {
           item.classList.remove('section-show')
+          animated.classList.remove('hidden-text')
         })
         return;
       }
@@ -95,6 +97,7 @@
             item.classList.remove('section-show')
           })
           section.classList.add('section-show')
+          animated.classList.add('hidden-text')
 
         }, 350);
       } else {
@@ -116,6 +119,7 @@
       let initial_nav = select(window.location.hash)
 
       if (initial_nav) {
+        let animated = select('.animated-container')
         let header = select('#header')
         let navlinks = select('#navbar .nav-link', true)
 
@@ -131,8 +135,9 @@
 
         setTimeout(function() {
           initial_nav.classList.add('section-show')
+          animated.classList.add('hidden-text')
         }, 350);
-
+       
         scrollto(window.location.hash)
       }
     }
