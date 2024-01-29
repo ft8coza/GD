@@ -1683,7 +1683,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #15bb62;
+  background: var(--bs-2);
 }
 
 @keyframes animate-loading {
