@@ -64,7 +64,7 @@
       let section = select(this.hash);
       if (section) {
         e.preventDefault();
-        let animated = select(".animated-container");
+        let animated = select(".typeblock");
 
         let navbar = select("#navbar");
         let header = select("#header");
@@ -123,7 +123,7 @@
       let initial_nav = select(window.location.hash);
 
       if (initial_nav) {
-        let animated = select(".animated-container");
+        let animated = select(".typeblock");
         let header = select("#header");
         let navlinks = select("#navbar .nav-link", true);
 

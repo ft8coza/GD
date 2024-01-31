@@ -730,6 +730,15 @@ h6 {
   }
 }
 
+h5 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: var(--bs-font-header);
+}
+
 /*Animation on MUSIC*/
 .animated-container {
   display: flex;
@@ -1886,6 +1895,11 @@ button[type="new"] {
   background: var(--bs-3);
   border-color: var(--bs-3);
   color: #fff;
+  background: var(--bs-3);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
