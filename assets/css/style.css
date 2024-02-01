@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+/*
 * {
   background-color: rgba(255, 0, 0, 0.2);
 }
@@ -32,7 +32,7 @@
 }
 * * * * * * * * * {
   background-color: rgba(0, 0, 255, 0.2);
-}
+}*/
 
 @font-face {
   font-family: "Buffalo Regular";
@@ -67,6 +67,7 @@ html {
   --bs-gray: #6c757d;
   --bs-gray-dark: #0e0f12;
 
+  --bs-body-color: #000942;
   --bs-1: #000942;
   --bs-2: #afc650;
   --bs-3: #fccf41;
@@ -137,7 +138,7 @@ html {
   padding: 9%;
 }
 .p-10-p {
-  padding: 10%;
+  padding: 10px !important;
 }
 .p-11-p {
   padding: 11%;
@@ -591,7 +592,7 @@ html {
 --------------------------------------------------------------*/
 body {
   font-family: var(--bs-font-body);
-  background-color: #040404;
+  background-color: var(--bs-body-color);
   color: #fff;
   position: relative;
   background: transparent;
@@ -600,9 +601,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/logos/UpliftLogo.png") top no-repeat;
-  
-  /*background: #040404 url("../img/bg.jpg") top right no-repeat;*/
+  background: var(--bs-body-color) url("../img/logos/UpliftLogo.png") top no-repeat;
+
+  /*background: var(--bs-body-color) url("../img/bg.jpg") top right no-repeat;*/
   background-size: contain;
   left: 0;
   right: 0;
@@ -788,7 +789,7 @@ h5 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background:var(--bs-body-color);
 }
 
 #header.header-top .social-links,
@@ -932,7 +933,7 @@ h5 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--bs-body-color);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -994,14 +995,14 @@ section {
 }
 
 section.section-show {
-  top: 85px;
+  top: 75px;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
 }
 
 section .container {
-  background: rgba(0, 0, 0, 1);
+  background: var(--bs-body-color);
   padding: 30px;
 }
 
@@ -1085,7 +1086,9 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
+.about-me div p {
+  font-weight: 100;
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1822,7 +1825,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--bs-body-color);
   }
 }
 
