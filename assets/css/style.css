@@ -601,6 +601,7 @@ body::before {
   content: "";
   position: fixed;
   background: #040404 url("../img/logos/UpliftLogo.png") top no-repeat;
+  
   /*background: #040404 url("../img/bg.jpg") top right no-repeat;*/
   background-size: contain;
   left: 0;
