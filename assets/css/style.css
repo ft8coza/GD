@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+/*
 * { background-color: rgba(255,0,0,.2); }
 * * { background-color: rgba(0,255,0,.2); }
 * * * { background-color: rgba(0,0,255,.2); }
@@ -15,7 +15,7 @@
 * * * * * * * { background-color: rgba(255,0,0,.2); }
 * * * * * * * * { background-color: rgba(0,255,0,.2); }
 * * * * * * * * * { background-color: rgba(0,0,255,.2); }
-
+*/
 @font-face {
   font-family: "Buffalo Regular";
   src: url("https://db.onlinewebfonts.com/t/d65cf77ad028b823f585bfa44b3307c6.eot");
@@ -563,10 +563,10 @@ html {
   margin-bottom: 0;
 }
 
-.img-fluid-w{
-height: 35vh;
-justify-content: right;
-display:flex;
+.img-fluid-w {
+  height: 35vh;
+  justify-content: right;
+  display: flex;
 }
 /*--------------------------------------------------------------
 # General
