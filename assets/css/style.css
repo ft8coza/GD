@@ -16,34 +16,6 @@
 * * * * * * * * { background-color: rgba(0,255,0,.2); }
 * * * * * * * * * { background-color: rgba(0,0,255,.2); }
 */
-/*
-* {
-  background-color: rgba(255, 0, 0, 0.2);
-}
-* * {
-  background-color: rgba(0, 255, 0, 0.2);
-}
-* * * {
-  background-color: rgba(0, 0, 255, 0.2);
-}
-* * * * {
-  background-color: rgba(255, 0, 255, 0.2);
-}
-* * * * * {
-  background-color: rgba(0, 255, 255, 0.2);
-}
-* * * * * * {
-  background-color: rgba(255, 255, 0, 0.2);
-}
-* * * * * * * {
-  background-color: rgba(255, 0, 0, 0.2);
-}
-* * * * * * * * {
-  background-color: rgba(0, 255, 0, 0.2);
-}
-* * * * * * * * * {
-  background-color: rgba(0, 0, 255, 0.2);
-}*/
 
 @font-face {
   font-family: "Buffalo Regular";
@@ -183,13 +155,13 @@ html {
   padding: 5px;
 }
 .p-10 {
-  padding: 10px;
+  padding: 10px !important;
 }
 .p-15 {
   padding: 15px;
 }
 .p-20 {
-  padding: 20px;
+  padding: 10px 20px 10px 20px !important;
 }
 .p-30 {
   padding: 30px;
@@ -1921,6 +1893,12 @@ button[type="new"] {
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
+  min-width: 100%;
+}
+
+.btn.btn-primary a {
+  min-width: 100%;
+  justify-content: center;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
